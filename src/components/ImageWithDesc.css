@@ -21,6 +21,7 @@
   text-transform: uppercase;
   cursor: pointer; 
   position: relative;
+  font-weight: 600;
 }
 
 .image-with-desc article a::after {
