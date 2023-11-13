@@ -7,6 +7,7 @@ import imageThree from './assets/component-01/Image-03.jpg';
 import imageThree2x from './assets/component-01/Image-03@2x.jpg';
 
 import Image from './components/Image';
+import ImageWithDesc from './components/ImageWithDesc';
 
 function App() {
   // mock cms data
@@ -17,9 +18,38 @@ function App() {
     subtitleCopy: "Sourcing local or organic food is a good way to start being more mindful about what you're cooking and eating" 
   };
 
+  const block2 = {
+    title: "All the latest from AEG",
+    blockData: [{
+      src: imageOne,
+      srcDesktop: imageOne2x,
+      alt: "father and son walking",
+      width: 380,
+      height: 290,
+      title: "Summer lunch menu by Mark Best",
+      description: "AEG ambassador Mark Best's summer eats are guaranteed to help you make the most of the warmer weather and entertaining at home."
+    }, {
+      src: imageOne,
+      srcDesktop: imageOne2x,
+      alt: "father and son walking",
+      width: 380,
+      height: 290,
+      title: "A traditional Christmas Eve, Mark Best style",
+      description: "One of Australia's best chefs and AEG ambassador, Mark Best, shares his favourite Christmas Eve menu which is sure to impress your guests."
+    }, {
+      src: imageOne,
+      srcDesktop: imageOne2x,
+      alt: "father and son walking",
+      width: 380,
+      height: 290,
+      title: "Taking taste further",
+      description: "This exclusive cookbook gives you all the know-how you need. We've designed it to make sure you get the most of our products - and the best out of your food."
+    }]
+  }
+
   return (
     <main className="container">
-      <section className="container-body">
+      <section className="container-block-1">
         <Image 
           src={imageOne}
           srcDesktop={imageOne2x}
@@ -33,7 +63,7 @@ function App() {
             src={imageTwo}
             srcDesktop={imageTwo2x}
             width={380}
-          height={290}
+            height={290}
           />
           <Image 
             src={imageThree}
@@ -49,6 +79,24 @@ function App() {
           <h3>{block1.subtitle}</h3>
           <p>{block1.subtitleCopy}</p>
         </article>
+      </section>
+      <section className="container-block-2">
+        <h2>{block2.title}</h2>
+        <div className="images-container">
+          {block2.blockData.map((item, index) => 
+            <ImageWithDesc 
+              key={`${item.title}-${index}`}
+              src={item.src}
+              srcDesktop={item.srcDesktop}
+              alt={item.alt}
+              width={item.width}
+              height={item.height}
+              title={item.title}
+              description={item.description}
+              bottomBorder
+            />
+          )}
+        </div>
       </section>
     </main>
 
