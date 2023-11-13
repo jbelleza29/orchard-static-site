@@ -11,7 +11,10 @@
 body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
+  font-family: 'Open Sans', sans-serif;
+  background-color: #0E1414;
 }
+
 img, picture, video, canvas, svg {
   display: block;
   max-width: 100%;
@@ -24,4 +27,44 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 #root, #__next {
   isolation: isolate;
+}
+
+/* Open Sans Regular */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open Sans'), local('OpenSans'), url('assets/fonts/OpenSans/OpenSans-Regular.ttf') format('truetype');
+}
+
+/* Open Sans Light */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Open Sans Light'), local('OpenSans-Light'), url('assets/fonts/OpenSans/OpenSans-Light.ttf') format('truetype');
+}
+
+/* Open Sans Bold */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Open Sans Bold'), local('OpenSans-Bold'), url('assets/fonts/OpenSans/OpenSans-Bold.ttf') format('truetype');
+}
+
+/* Open Sans Extra Bold */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 800;
+  src: local('Open Sans Extra Bold'), local('OpenSans-ExtraBold'), url('assets/fonts/OpenSans/OpenSans-ExtraBold.ttf') format('truetype');
+}
+
+/* Open Sans Semi Bold */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 600;
+  src: local('Open Sans Semi Bold'), local('OpenSans-SemiBold'), url('assets/fonts/OpenSans/OpenSans-SemiBold.ttf') format('truetype');
 }
