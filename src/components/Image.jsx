@@ -1,10 +1,10 @@
 import './Image.css';
 import PropTypes from "prop-types";
 
-const Image = ({ src, alt, srcDesktop, width, height, bottomBorder }) => {
+const Image = ({ src, alt, srcDesktop, width, height, bottomBorder=false }) => {
   return ( 
     <img 
-      className={`Image ${bottomBorder && 'bottom-border'}`}
+      className={`Image${bottomBorder ? ' bottom-border': ''}`}
       src={src}
       alt={alt}
       width={width}
