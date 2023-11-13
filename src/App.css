@@ -68,3 +68,31 @@
   grid-template-columns: 1fr 1fr 1fr;
   gap: 24px;
 }
+
+@media screen and (max-width: 1000px) {
+  .container {
+    margin: 1em;
+  }
+
+  .container .container-block-1 {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    justify-items: center;
+  }
+
+  .container-block-2 {
+    margin-top: 60px;
+  }
+
+  .container-block-2 .images-container {
+    grid-template-columns: 1fr;
+    gap: 50px;
+  }
+}
+
+@media screen and (min-width: 1000px) and (max-width: 1200px) {
+  .container {
+    margin: 5em;
+  }
+}
