@@ -1,4 +1,4 @@
-# Test Static site with Modal
+# Static site with Modal
 
 Simple Vite-powered React application!
 
