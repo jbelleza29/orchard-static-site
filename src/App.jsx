@@ -5,7 +5,12 @@ import imageTwo from './assets/component-01/Image-02.jpg';
 import imageTwo2x from './assets/component-01/Image-02@2x.jpg';
 import imageThree from './assets/component-01/Image-03.jpg';
 import imageThree2x from './assets/component-01/Image-03@2x.jpg';
-
+import imageFour from './assets/component-02/Image-01.jpg';
+import imageFour2x from './assets/component-02/Image-01@2x.jpg';
+import imageFive from './assets/component-02/Image-02.jpg';
+import imageFive2x from './assets/component-02/Image-02@2x.jpg';
+import imageSix from './assets/component-02/Image-03.jpg';
+import imageSix2x from './assets/component-02/Image-03@2x.jpg';
 import Image from './components/Image';
 import ImageWithDesc from './components/ImageWithDesc';
 
@@ -21,25 +26,25 @@ function App() {
   const block2 = {
     title: "All the latest from AEG",
     blockData: [{
-      src: imageOne,
-      srcDesktop: imageOne2x,
-      alt: "father and son walking",
+      src: imageFour,
+      srcDesktop: imageFour2x,
+      alt: "food with shrimp and drinks",
       width: 380,
       height: 290,
       title: "Summer lunch menu by Mark Best",
       description: "AEG ambassador Mark Best's summer eats are guaranteed to help you make the most of the warmer weather and entertaining at home."
     }, {
-      src: imageOne,
-      srcDesktop: imageOne2x,
-      alt: "father and son walking",
+      src: imageFive,
+      srcDesktop: imageFive2x,
+      alt: "roasted chicken",
       width: 380,
       height: 290,
       title: "A traditional Christmas Eve, Mark Best style",
       description: "One of Australia's best chefs and AEG ambassador, Mark Best, shares his favourite Christmas Eve menu which is sure to impress your guests."
     }, {
-      src: imageOne,
-      srcDesktop: imageOne2x,
-      alt: "father and son walking",
+      src: imageSix,
+      srcDesktop: imageSix2x,
+      alt: "beef with vegetables",
       width: 380,
       height: 290,
       title: "Taking taste further",
