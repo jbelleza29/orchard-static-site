@@ -29,6 +29,29 @@ p, h1, h2, h3, h4, h5, h6 {
   isolation: isolate;
 }
 
+.modal{
+   position: fixed;
+   z-index: 2;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background-color: rgba(0, 0, 0, 0.5);
+   overflow: auto;
+
+}
+
+.modal-container{
+   background-color: #fefffe;
+   margin: 10% auto;
+   width: fit-content;
+   padding: 10px;
+}
+
+.modal-body img {
+  object-fit: cover;
+}
+
 /* Open Sans Regular */
 @font-face {
   font-family: 'Open Sans';
