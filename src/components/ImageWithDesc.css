@@ -1,0 +1,27 @@
+.image-with-desc article {
+  margin-top: 30px;
+  text-align: justify;
+}
+
+.image-with-desc article h3 {
+  text-transform: capitalize;
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 7px;
+}
+
+.image-with-desc article p {
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 28px;
+  margin-bottom: 25px;
+}
+
+.image-with-desc article a {
+  text-transform: uppercase;
+  border-bottom: 1px solid #CE1331;
+  padding-bottom: 7px;
+  cursor: pointer;
+}
+
+
