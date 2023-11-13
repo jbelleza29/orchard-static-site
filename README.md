@@ -1,8 +1,25 @@
-# React + Vite
+# Test Static site with Modal
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Simple Vite-powered React application!
 
-Currently, two official plugins are available:
+## Getting Started
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+1. **Clone the repository:**
+
+   ```bash
+   git clone https://github.com/jbelleza29/orchard-static-site.git
+2. **Navigate to the project folder:**
+
+   ```bash
+   cd orchard-static-site/
+
+3. **Install dependencies:**
+
+   ```bash
+   yarn
+
+3. **Run the development server:**
+
+   ```bash
+   yarn dev
+
