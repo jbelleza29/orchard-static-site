@@ -56,6 +56,7 @@ function App() {
           alt="father and son walking"
           width={380}
           height={600}
+          showModalOnClick
         />
         <div className="split-section">
           <Image 
@@ -64,6 +65,7 @@ function App() {
             srcDesktop={imageTwo2x}
             width={380}
             height={290}
+            showModalOnClick
           />
           <Image 
             src={imageThree}
@@ -71,6 +73,7 @@ function App() {
             alt="stalks of asparagus"
             width={380}
             height={290}
+            showModalOnClick
           />
         </div>
         <article>
