@@ -1,10 +1,10 @@
 import './Image.css';
 import PropTypes from "prop-types";
 
-const Image = ({ src, alt, srcDesktop, width, height }) => {
+const Image = ({ src, alt, srcDesktop, width, height, bottomBorder }) => {
   return ( 
     <img 
-      className='Image'
+      className={`Image ${bottomBorder && 'bottom-border'}`}
       src={src}
       alt={alt}
       width={width}
@@ -19,7 +19,8 @@ Image.propTypes = {
   alt: PropTypes.string,
   srcDesktop: PropTypes.string,
   width: PropTypes.number,
-  height: PropTypes.number
+  height: PropTypes.number,
+  bottomBorder: PropTypes.bool
 }
 
 export default Image
