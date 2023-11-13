@@ -1,7 +1,12 @@
 import './App.css';
+import imageOne from './assets/component-01/Image-01.jpg';
+import imageOne2x from './assets/component-01/Image-01@2x.jpg';
+import imageTwo from './assets/component-01/Image-02.jpg';
+import imageTwo2x from './assets/component-01/Image-02@2x.jpg';
+import imageThree from './assets/component-01/Image-03.jpg';
+import imageThree2x from './assets/component-01/Image-03@2x.jpg';
+
 import Image from './components/Image';
-import imageOne from './assets/component-01/image-01.jpg';
-import imageOne2x from './assets/component-01/image-01@2x.jpg';
 
 function App() {
   // mock cms data
@@ -24,16 +29,16 @@ function App() {
         />
         <div className="split-section">
           <Image 
-            alt="father and son walking"
-            src={imageOne}
-            srcDesktop={imageOne2x}
+            alt="bowl of fruits"
+            src={imageTwo}
+            srcDesktop={imageTwo2x}
             width={380}
           height={290}
           />
           <Image 
-            src={imageOne}
-            srcDesktop={imageOne2x}
-            alt="father and son walking"
+            src={imageThree}
+            srcDesktop={imageThree2x}
+            alt="stalks of asparagus"
             width={380}
             height={290}
           />
