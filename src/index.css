@@ -48,7 +48,17 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 
 .modal-body img {
-  object-fit: cover;
+  object-fit: contain;
+}
+
+.modal-close {
+  border: 0;
+  background: transparent;
+  font-weight: 800;
+  font-size: 14px;
+  float: right;
+  padding: 8px;
+  cursor: pointer;
 }
 
 /* Open Sans Regular */
