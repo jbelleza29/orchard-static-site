@@ -7,6 +7,6 @@
   object-fit: cover;
 }
 
-.Image .bottom-border {
+.Image.bottom-border {
   border-bottom: 3px solid #CE1331;
 }

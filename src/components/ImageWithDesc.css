@@ -19,9 +19,25 @@
 
 .image-with-desc article a {
   text-transform: uppercase;
-  border-bottom: 1px solid #CE1331;
-  padding-bottom: 7px;
-  cursor: pointer;
+  cursor: pointer; 
+  position: relative;
+}
+
+.image-with-desc article a::after {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -10px;
+  border-bottom: 2px solid;
+  pointer-events: none;
+  transition: transform 200ms ease-in-out;
+  color: #CE1331;
+}
+
+.image-with-desc article a:hover::after{
+  transform: translateY(3px);
 }
 
 
