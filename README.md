@@ -2,6 +2,13 @@
 
 Simple Vite-powered React application!
 
+## Prerequisites
+
+Before you start, make sure you have Node.js and Yarn installed on your machine.
+
+- **Node.js:** You can download it from [https://nodejs.org/](https://nodejs.org/).
+- **Yarn:** Install Yarn globally by following the instructions at [https://yarnpkg.com/getting-started/install](https://yarnpkg.com/getting-started/install).
+
 ## Getting Started
 
 1. **Clone the repository:**
