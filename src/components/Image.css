@@ -3,20 +3,19 @@
   block-size: auto;
 }
 
+.Image:hover {
+  transform: translateY(3px);
+}
+
 .Image {
   object-fit: cover;
+  cursor: pointer;
+  transition: 300ms ease-in-out;
 }
 
 .Image.bottom-border {
   border-bottom: 3px solid #CE1331;
 }
 
-.Image.with-modal {
-  cursor: pointer;
-  transition: 300ms ease-in-out;
-}
 
-.Image.with-modal:hover {
-  transform: translateY(3px);
-}
 

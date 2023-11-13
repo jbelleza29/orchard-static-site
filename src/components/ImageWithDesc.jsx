@@ -7,7 +7,9 @@ const ImageWithDesc = (props) => {
   const { description, title, ...imageProps } = props;
   return (
     <div className='image-with-desc'>
-      <Image {...imageProps} />
+      <a onClick={(e) => console.log(e.target)}>
+        <Image {...imageProps} />
+      </a>
       <article>
         <h3>{title}</h3>
         <p>{description}</p>
