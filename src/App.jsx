@@ -1,34 +1,45 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import './App.css';
+import Image from './components/Image';
+import imageOne from './assets/component-01/image-01.jpg';
+import imageOne2x from './assets/component-01/image-01@2x.jpg';
 
 function App() {
-  const [count, setCount] = useState(0)
-
+  console.log(imageOne);
   return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+    <main className="container">
+      <section className="container-body">
+        <Image 
+          src={imageOne}
+          srcDesktop={imageOne2x}
+          alt="father and son walking"
+          width={380}
+          height={600}
+        />
+        <div className="split-section">
+          <Image 
+            alt="father and son walking"
+            src={imageOne}
+            srcDesktop={imageOne2x}
+            width={380}
+          height={290}
+          />
+          <Image 
+            src={imageOne}
+            srcDesktop={imageOne2x}
+            alt="father and son walking"
+            width={380}
+          height={290}
+          />
+        </div>
+        <article>
+          <h2>Answer your body&apos;s needs</h2>
+          <p>The way ingredients are sourced affects the way we nourish our bodies. Author Mark Schatzer believes our body naturally develops an appetite for the foods and nutrients it needs to be healthy, but that artificial flavourings are getting in the way. This can be reversed by focusing on high-quality ingredients and being mindful as your appetite guides you to consume according to your body&apos;s needs.</p>
+          <h3>Be mindful</h3>
+          <p>Sourcing local or organic food is a good way to start being more mindful about what you&apos;re cooking and eating</p>
+        </article>
+      </section>
+    </main>
+
   )
 }
 
